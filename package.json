@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "pretest": "cp ./src/tsconfig.json ./",
     "test": "./node_modules/.bin/mocha -r ts-node/register __tests__/**/*.ts",
+    "posttest": "rm ./tsconfig.json",
     "create_index": "run-script-os",
     "create_index:win32": "echo module.exports = require('./dist'); > index.js",
     "create_index:linux:darwin": "echo \"module.exports = require('./dist');\" > index.js",
     "build_ts": "./node_modules/.bin/ntsc -p ./src && npm run create_index",
     "clear": "rm -rf ./dist && rm -f ./index.js",
+    "start": "npm run build_ts && node index.js",
     "prepublish": "npm run build_ts",
     "postpublish": "npm run clear"
   },
@@ -20,14 +23,15 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@types/chai": "^4.1.2",
+    "@types/chai": "^4.1.5",
+    "@types/core-js": "^2.5.0",
     "@types/mocha": "^5.2.5",
-    "@types/node": "^10.9.2",
-    "chai": "^4.1.2",
+    "@types/node": "^10.11.2",
+    "chai": "^4.2.0",
     "mocha": "^5.2.0",
     "ntypescript": "^1.201706190042.1",
     "run-script-os-fix": "^1.0.4",
     "ts-node": "^7.0.1",
-    "typescript": "^3.0.1"
+    "typescript": "^3.1.1"
   }
 }
