@@ -8,6 +8,7 @@ cd [project_name]
 rm -rf .git
 npm install
 rm __tests__/.gitkeep
+rm src/.gitkeep
 ```
 
 Then update the `package.json`.
