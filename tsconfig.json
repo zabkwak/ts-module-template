@@ -4,12 +4,14 @@
         "noImplicitAny": true,
         "removeComments": true,
         "preserveConstEnums": true,
-        "outDir": "../dist",
+        "outDir": "./dist",
+        "rootDir": "./src",
         "sourceMap": true,
         "declaration": true,
         "target": "es6",
         "lib": [
             "es6"
         ]
-    }
+    },
+    "exclude": ["./__tests__"]
 }
