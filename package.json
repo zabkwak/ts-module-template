@@ -1,10 +1,6 @@
 {
   "name": "ts-module-template",
-<<<<<<< HEAD
-  "version": "2.1.0",
-=======
   "version": "3.0.0",
->>>>>>> 88cfd1105eff6286814f444c2b87baab10d54f4c
   "description": "",
   "main": "index.js",
   "scripts": {
