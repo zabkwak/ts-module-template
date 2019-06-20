@@ -1,6 +1,10 @@
 {
   "name": "ts-module-template",
+<<<<<<< HEAD
   "version": "2.1.0",
+=======
+  "version": "3.0.0",
+>>>>>>> 88cfd1105eff6286814f444c2b87baab10d54f4c
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -26,9 +30,10 @@
     "@types/mocha": "^5.2.5",
     "@types/node": "^10.12.18",
     "chai": "^4.2.0",
-    "mocha": "^5.2.0",
+    "mocha": "^6.1.4",
     "run-script-os-fix": "^1.0.4",
-    "ts-node": "^7.0.1",
+    "ts-node": "^8.3.0",
+    "tslint": "^5.17.0",
     "typescript": "^3.2.2"
   }
 }
