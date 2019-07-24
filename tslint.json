@@ -31,7 +31,15 @@
             "single",
             "jsx-double"
         ],
-        "array-type": false
+        "array-type": false,
+        "variable-name": {
+            "options": [
+              "ban-keywords",
+              "check-format",
+              "allow-leading-underscore",
+              "allow-pascal-case"
+            ]
+          }
     },
     "jsRules": {
         "no-empty": true,
