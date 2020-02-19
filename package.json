@@ -3,6 +3,7 @@
 	"version": "3.3.2",
 	"description": "",
 	"main": "index.js",
+	"types": "./dist/index.d.ts",
 	"scripts": {
 		"create_index": "run-script-os",
 		"create_index:win32": "echo module.exports = require('./dist'); > index.js",
@@ -31,10 +32,10 @@
 	},
 	"dependencies": {},
 	"devDependencies": {
-		"@types/chai": "^4.2.2",
-		"@types/core-js": "^2.5.2",
+		"@types/chai": "^4.2.9",
+		"@types/core-js": "^2.5.3",
 		"@types/mocha": "^5.2.7",
-		"@types/node": "^10.14.18",
+		"@types/node": "^10.17.16",
 		"chai": "^4.2.0",
 		"mocha": "^6.2.0",
 		"run-script-os-fix": "^1.0.4",
