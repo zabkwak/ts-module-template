@@ -2,7 +2,7 @@
     "compilerOptions": {
         "module": "commonjs",
         "noImplicitAny": true,
-        "removeComments": true,
+        "removeComments": false,
         "preserveConstEnums": true,
         "outDir": "./dist",
         "rootDir": "./src",
@@ -15,7 +15,7 @@
         "plugins": [
             {
                 "name": "typescript-tslint-plugin",
-                "alwaysShowRuleFailuresAsWarnings": false,
+                "alwaysShowRuleFailuresAsWarnings": true,
                 "ignoreDefinitionFiles": true,
                 "configFile": "./tslint.json",
                 "suppressWhileTypeErrorsPresent": false
@@ -23,6 +23,6 @@
         ]
     },
     "exclude": [
-        "./__tests__"
+        "./__tests__", "./dist"
     ]
 }
