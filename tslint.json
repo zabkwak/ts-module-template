@@ -65,7 +65,11 @@
 					"private-instance-method"
 				]
 			}
-		]
+		],
+		"ordered-imports": true,
+		"member-access": true,
+		"eofline": true,
+		"trailing-comma": true
 	},
 	"jsRules": {
 		"no-empty": true,
