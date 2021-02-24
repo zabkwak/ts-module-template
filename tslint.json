@@ -69,7 +69,8 @@
 		"ordered-imports": true,
 		"member-access": true,
 		"eofline": true,
-		"trailing-comma": true
+		"trailing-comma": true,
+		"semicolon": true
 	},
 	"jsRules": {
 		"no-empty": true,
