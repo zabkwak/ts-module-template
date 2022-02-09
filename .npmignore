@@ -3,3 +3,4 @@
 /.gitignore
 /__tests__
 /tsconfig.json
+/.env

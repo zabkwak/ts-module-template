@@ -20,8 +20,8 @@
 		"create_nojekyll:linux:darwin": "touch ./docs/.nojekyll",
 		"docs_generate": "./node_modules/.bin/typedoc --out docs ./src",
 		"docs": "npm run clear_docs && npm run docs_generate && npm run create_nojekyll",
-		"test": "./node_modules/.bin/mocha -r ts-node/register __tests__/**/*.ts",
-		"start": "npm run clear && npm run build_ts && node -r source-map-support/register index.js",
+		"test": "./node_modules/.bin/mocha -r ts-node/register -r dotenv/config __tests__/**/*.ts",
+		"start": "npm run clear && npm run build_ts && node -r source-map-support/register -r dotenv/config index.js",
 		"prepublish": "npm run clear && npm run build_ts",
 		"postpublish": "npm run clear"
 	},
@@ -37,6 +37,7 @@
 		"@types/mocha": "^9.1.0",
 		"@types/node": "^12.20.43",
 		"chai": "^4.3.6",
+		"dotenv": "^16.0.0",
 		"mocha": "^9.2.0",
 		"run-script-os-fix": "^1.0.4",
 		"source-map-support": "^0.5.21",
