@@ -20,7 +20,8 @@
                 "configFile": "./tslint.json",
                 "suppressWhileTypeErrorsPresent": false
             }
-        ]
+        ],
+		"experimentalDecorators": true
     },
     "exclude": [
         "./__tests__", "./dist"
