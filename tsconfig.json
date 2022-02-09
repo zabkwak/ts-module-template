@@ -21,7 +21,8 @@
                 "suppressWhileTypeErrorsPresent": false
             }
         ],
-		"experimentalDecorators": true
+		"experimentalDecorators": true,
+		"esModuleInterop": true
     },
     "exclude": [
         "./__tests__", "./dist"
